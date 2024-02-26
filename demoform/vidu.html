@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+    }
+    form{
+        max-width: fit-content;
+        margin: 20px;
+
+    }
+    table{
+        border-collapse: collapse;
+        margin: 15px;
+    }
+
+</style>
 <body>
     <form action="">
         <h1>Market Research Servey</h1>
@@ -29,21 +45,21 @@
         </select><br><br>
 
         <label for="">Gender Identity</label><br>
-        <input type="radio" name="radio"><span>Male</span><br>
-        <input type="radio" name="radio"><span>Female</span><br>
-        <input type="radio" name="radio"><span>Nonbinary</span><br>
-        <input type="radio" name="radio"><span>Other</span><br>
+        <input type="radio" name="gender"><span>Male</span><br>
+        <input type="radio" name="gender"><span>Female</span><br>
+        <input type="radio" name="gender"><span>Nonbinary</span><br>
+        <input type="radio" name="gender"><span>Other</span><br>
             <input type="text"><br><br>
 
         <label for="">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
-        <input type="radio" name="radio"><span>Product 1</span><br>
-        <input type="radio" name="radio"><span>Product 2</span><br>
-        <input type="radio" name="radio"><span>Product 3</span><br><br>
+        <input type="checkbox" name="product"><span>Product 1</span><br>
+        <input type="checkbox" name="product"><span>Product 2</span><br>
+        <input type="checkbox" name="product"><span>Product 3</span><br><br>
 
-        <label for="">How often would you use our new product?</label>
-        <input type="radio" name="radio"><span>Daily</span><br>
-        <input type="radio" name="radio"><span>Weekly</span><br>
-        <input type="radio" name="radio"><span>Monthly</span><br><br>
+        <label for="">How often would you use our new product?</label><br>
+        <input type="radio" name="time"><span>Daily</span><br>
+        <input type="radio" name="time"><span>Weekly</span><br>
+        <input type="radio" name="time"><span>Monthly</span><br><br>
 
         <label for="">How often would you use our new product?</label><br>
         <table>
@@ -61,8 +77,8 @@
             </tr>
             
         </table><br><br>
-        <label for="op">What features would you like to see in the new product.</label>
-        <textarea name="" id="op" cols="30" rows="10"></textarea><br><br>
+        <label for="op">What features would you like to see in the new product.</label><br>
+        <textarea name="" id="op" cols="100" rows="10"></textarea><br><br>
 
         <h5>Please rate your level of agreement with the following statements.</h5><br>
         <table border="1">
@@ -72,9 +88,27 @@
                 <td>Disagree</td>
                 <td>Agree</td>
             </tr>
-            tr
-        </table>
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <td><input type="radio" name="priced">1</td>
+                <td><input type="radio" name="priced">2</td>
+                <td><input type="radio" name="priced">3</td>
+            </tr>
+            <tr>
+                <td>Our products are high quality.</td>
+                <td><input type="radio" name="quality">1</td>
+                <td><input type="radio" name="quality">2</td>
+                <td><input type="radio" name="quality">3</td>
+            </tr>
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td><input type="radio" name="recommend">1</td>
+                <td><input type="radio" name="recommend">2</td>
+                <td><input type="radio" name="recommend">3</td>
 
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
 
 
     </form>
