@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      
         body {
             box-sizing: border-box;
             
         }
-        .content {
-            width: 25%;
+        .content{
+            
             height: 400px;
             float: left;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-right: 5px;
+            
         }
         .img {
             width: 100%;
@@ -35,6 +36,18 @@
         .booter{
             float: left;
         }
+        @media screen and (min-width: 768px) {
+            .content { width: 22%;}
+           
+        }
+        @media screen and (max-width:768px) {
+            .content { width: 47%;}
+            
+        }
+        @media screen and (max-width: 576px) {
+            .content{width: 95%;}
+            
+        }
 
     </style>
 </head>
@@ -44,7 +57,7 @@
     <div class="content">
         <div class="img">
             <a href="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" target="_blank">
-                <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" width="280" height="200" alt="Responsive Image Gallery">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" width="320px" height="200" alt="Responsive Image Gallery">
             </a>
             <p> Add a description of the image here </p>
         </div>
@@ -52,7 +65,7 @@
     <div class="content">
         <div class="img">
             <a href="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" target="_blank">
-                <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg"  width="280" height="200" alt="Responsive Image Gallery">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg"  width="320px" height="200" alt="Responsive Image Gallery">
             </a>
             <p> Add a description of the image here </p>
         </div>
@@ -60,7 +73,7 @@
     <div class="content">
         <div class="img">
             <a href="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" target="_blank">
-                <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg"  width="280" height="200" alt="Responsive Image Gallery">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg"  width="320px" height="200" alt="Responsive Image Gallery">
             </a>
             <p> Add a description of the image here </p>
         </div>
@@ -68,7 +81,7 @@
     <div class="content"> 
         <div class="img">
             <a href="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" target="_blank">
-                <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" width="280" height="200" alt="Responsive Image Gallery">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" width="320px" height="200" alt="Responsive Image Gallery">
             </a>       
             <p> Add a description of the image here </p>
         </div>
