@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rwd-grid.css">
+</head>
+<style>
+      @media screen and (min-width: 768px){
+       
+        #header{
+            height: 100px;
+            }
+        #left{
+            height: 300px;
+        }
+        #content{
+            height: 300px;
+        }
+
+        #right{
+            height: 300px;
+
+        }
+        #footer{
+            height: 50px;
+        }
+      }
+   
+    /* giao dien may tinh bang */
+    @media screen and (max-width: 768px) {
+        
+        #header{
+        height: 50px;
+        }
+        #left{
+            height: 200px;
+        }
+        #content{
+            height: 200px;
+        }
+
+        #right{
+            height: 200px;
+
+        }
+        #footer{
+            height: 50px;
+        }
+    }
+    /* giao dien dien thoai */
+    @media screen and (max-width: 576px) {
+        
+        #header{
+        height: 30px;
+        }
+        #left{
+            height: 100px;
+        }
+        #content{
+            height: 100px;
+        }
+
+        #right{
+            height: 100px;
+
+        }
+        #footer{
+            height: 30px;
+        }
+    }
+</style>
+<body>
+    <div id="header" class="col-md-12 col-sm-12 col-12"></div>
+    <div id="left" class="col-md-3 col-sm-4 col-12"></div>
+    <div id="content" class="col-md-6 col-sm-8 col-12"></div>
+    <div id="right" class="col-md-3 col-sm-12 col-12"></div>
+    <div id="footer" class="col-md-12 col-sm-12 col-12"></div>
+</body>
+</html>
