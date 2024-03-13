@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "demo demo demo"
+        "about about social"
+        "contact contact social"
+        "footer footer footer" ;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        color: rgb(4, 36, 25);
+        
+    }
+    .item{
+        padding: 20px;
+        text-align: center;
+    }
+    .header{
+        grid-area: header;
+        background-color: blue;
+        border-radius: 10px;
+        text-align: left;
+    }
+    .demo{
+        grid-area: demo;
+        background-color: antiquewhite;
+    }
+    .about{
+        grid-area: about;
+        background-color: azure;
+    }
+    .contact{
+        grid-area: contact;
+        background-color: beige;
+    }
+    .social{
+        grid-area: social;
+        background-color: bisque;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: blue;
+        color: black;
+        height: 20px;
+    }
+
+    ul,li{
+        display: inline-block;
+        color: white;
+
+    }
+    li{
+        display: inline-block;
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="item header">
+            <ul>
+                <li><button>Home</button></li>
+                <li><button>About</button></li>
+                <li><button>Contact</button></li>
+            </ul>
+        </div>
+        <div class="item demo">
+            <h2>A Demo Site CSS Grid</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque pariatur possimus alias quod ratione incidunt dicta assumenda repudiandae optio eveniet, quisquam fuga! Nam eaque fuga similique quia, esse non libero?
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero doloremque, eum quis laudantium hic iste ab sed ipsum veniam, quam dolor rem cupiditate corrupti aliquam repudiandae officia soluta impedit!</p>
+        </div>
+        <div class="item about">
+            <h2>About</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem reprehenderit non. Magni sit alias quia, vel quidem autem quos optio quam at porro aliquid necessitatibus aut et eos nulla.</p>
+        </div>
+        <div class="item contact">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur magnam ipsum, commodi quam, non dolorem numquam veritatis, qui nam voluptas asperiores neque magni. Placeat, natus reprehenderit. Fugit, voluptatum commodi.</p>
+        </div>
+        <div class="item social">
+            <h2>Find Me on Social Media</h2>
+            <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+        <div class="item footer">
+            <p>Copỷight 2021 BW2109R1</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
