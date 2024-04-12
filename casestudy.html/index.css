@@ -501,8 +501,35 @@ color: blue;
     margin-top: 10px;
 }
 
+.search{
+    background-color: #F3F3F3;
+    padding: 30px 150px;
+    height: 100%
+}
+.search-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
 
 
+
+
+
+.footer{
+    display: flex;
+    background-color: #fff;
+    font-size: 13px;
+    width: 1500px;
+}
+.fLeft{
+    text-align: left;
+    padding: 12px;
+}
+.fRight{
+    text-align: right;
+
+}
 
 
 
