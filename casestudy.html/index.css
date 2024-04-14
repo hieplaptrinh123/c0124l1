@@ -68,6 +68,9 @@ nav ul li:nth-child(4) button{
 nav ul li a:hover{
     color: white;
 }
+.header-title img{
+    width: 100vw;
+}
 /*--------------------------address-form--------------*/
 .address-form{
     position: fixed;
@@ -185,18 +188,11 @@ color: blue;
 .slideshow {
     background-color: #F3F3F3;
 }
-.slideshow-container{
-    display: flex;
-    position: relative;
-    margin-left: 100px;
-    margin-top: -100px;
-    padding: 20px 35px;
-    border-radius: 12px;
-}
 /*-----------optionpromo-------------*/
 .option-promo{
     padding: 20px 35px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 100px;
@@ -211,8 +207,6 @@ color: blue;
     background-color: white;
     display: flex;
     align-items: center;
-    width: 250px;
-    height: 100px;
     border-radius: 12px;
 }
 .slide-div img {
@@ -244,15 +238,18 @@ color: blue;
 .background-slider-one{
     position: relative;
 }
+.background-slider-one img{
+    width: 100%;
+}
 .background-slider-one-button{
     position: absolute;
     display: flex;
-    width: 600px;
+    width: 300px;
     top: 50%;
     left: 5%;
 }
 .background-slider-one-button button {
-    width: 250px;
+    width: 100px;
     height: 30px;
     border-radius: 12px;
     margin-left: 15px;
@@ -262,11 +259,11 @@ color: blue;
 }
 .slider-product-one-content-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px 0;
 }
 .slider-product-one-content-item{
-    width: 19%;
     background-color: #fff;
     padding: 50px 12px 12px;
     border-radius: 5px;
@@ -345,6 +342,9 @@ color: blue;
 .background-slider-two{
     padding: 5px 0;
 }
+.background-slider-two img{
+    width: 100%;
+}
 .slider-product-two-content{
     background-color: #FCB601;
     padding-bottom: 20px;
@@ -352,11 +352,11 @@ color: blue;
 }
 .slider-product-two-content-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px 0;
 }
 .slider-product-two-content-item{
-    width: 19%;
     background-color: #fff;
     padding: 50px 12px 12px;
     border-radius: 5px;
@@ -384,6 +384,7 @@ color: blue;
     font-size: 13px;
     color: #ddd;
     display: flex;
+    flex-wrap: wrap;
     background-color: #D62C11;
 }
 .slider-product-two-content-item-text li:first-child p{
@@ -414,53 +415,54 @@ color: blue;
 }
 
 
-.slider-product-3{
+.slider-product-three{
     background-color: #F3F3F3;
-    margin-top: 30px;
+    padding: 12px;
 }
-.slider-product-3-content{
+.slider-product-three-content{
     background-color: rgb(253,203,179);
     border-radius: 12px;
 }
-.slider-product-3-content-title{
+.slider-product-three-content-title{
     padding: 12px;
 }
-.slider-product-3-content-items{
+.slider-product-three-content-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px 0;
 }
-.slider-product-3-content-item{
-    width: 23%;
+.slider-product-three-content-item{
     background-color: #fff;
     padding: 50px 12px 12px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.slider-product-3-content-item > img{
+.slider-product-three-content-item > img{
     width: 100%;
     transition: all 0.5s ease;
     
 }
-.slider-product-3-content-item:hover > img{
+.slider-product-three-content-item:hover > img{
     transform: translateY(-12px);
 }
-.slider-product-3-content-item-text{
+.slider-product-three-content-item-text{
     border-radius: 12px;
-    height: 100px;
+    height: 30px;
     display: flex;
+    flex-wrap: wrap;
     color: #0C0900;
 }
 
-.slider-product-3-content-item-text li:first-child{
+.slider-product-three-content-item-text li:first-child{
     font-size: 20px;
     font-weight: bold;
     margin-top: -80px;
     margin-left: 10px;
     
 }
-.slider-product-3-content-item-text li:nth-child(2){
+.slider-product-three-content-item-text li:nth-child(2){
     color: rgb(87,130,237);
     margin-top: -50px;
     margin-left: -90px;
@@ -483,6 +485,7 @@ color: blue;
 }
 .slider-categories-content-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px 0;
 }
@@ -535,7 +538,30 @@ color: blue;
 
 
 
+@media all and (min-width: 768px){
+    .slider-product-one-content-item{
+        width: 19%;
+    }
+    .slider-product-two-content-item{
+        width: 19%;
+    }
+    .slider-product-three-content-item{
+        width: 23%;
+    }
+}
 
+@media all and (max-width: 768px){
+    .slider-product-one-content-item{
+        flex-basis: 50%;
+    }
+    .slider-product-two-content-item{
+        flex-basis: 50%;
+    }
+    .slider-product-three-content-item{
+        flex-basis: 50%;
+    }
+
+}
 
   
 
