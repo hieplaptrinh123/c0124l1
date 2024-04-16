@@ -187,6 +187,9 @@ color: blue;
     justify-content: center;
     overflow: hidden;
 }
+.banner img{
+    width: 100%;
+}
 /*--------------slider-----------*/
 .slideshow {
     background-color: #F3F3F3;
