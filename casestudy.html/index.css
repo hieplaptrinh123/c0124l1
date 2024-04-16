@@ -27,6 +27,7 @@ nav{
 }
 nav ul{
     display: flex ;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -139,6 +140,7 @@ nav ul li a:hover{
 }
 .menu-bar ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .menu-bar ul li{
@@ -181,6 +183,7 @@ color: blue;
     text-align: center;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
 }
@@ -538,7 +541,7 @@ color: blue;
 
 
 
-@media all and (min-width: 768px){
+@media only screen and (min-width: 768px){
     .slider-product-one-content-item{
         width: 19%;
     }
@@ -550,7 +553,7 @@ color: blue;
     }
 }
 
-@media all and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .slider-product-one-content-item{
         flex-basis: 50%;
     }
@@ -561,6 +564,17 @@ color: blue;
         flex-basis: 50%;
     }
 
+}
+@media only screen and (max-width: 320px){
+    .slider-product-one-content-item{
+        flex-basis: 100%;
+    }
+    .slider-product-two-content-item{
+        flex-basis: 100%;
+    }
+    .slider-product-three-content-item{
+        flex-basis: 100%;
+    }
 }
 
   
